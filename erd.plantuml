@@ -1,0 +1,46 @@
+@startuml
+
+entity "Users" as Users {
+    * id : UUID
+    --
+    * name : String
+    * email : String
+    * password : String
+    * role : Enum {Admin, Organizer, User}
+    --
+    * created_at : Timestamp
+    * updated_at : Timestamp
+}
+
+entity "Events" as Events {
+    * id : UUID
+    --
+    * name : String
+    * description : Text
+    * date_time : Timestamp
+    * location : String
+    * price : Decimal
+    * quota : Integer
+    --
+    * created_by : UUID [FK to Users.id]
+    * created_at : Timestamp
+    * updated_at : Timestamp
+}
+
+entity "Bookings" as Bookings {
+    * id : UUID
+    --
+    * user_id : UUID [FK to Users.id]
+    * event_id : UUID [FK to Events.id]
+    * ticket_count : Integer
+    * status : Enum {Active, Canceled}
+    --
+    * created_at : Timestamp
+    * updated_at : Timestamp
+}
+
+Users ||--o{ Events : "Creates"
+Users ||--o{ Bookings : "Makes"
+Events ||--o{ Bookings : "Has"
+
+@enduml

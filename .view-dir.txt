@@ -1,0 +1,41 @@
+owkay since di bagian guest itu dia basically cm bisa liat daftar event
+sm Detailnya i think it's not necessary to buat controller n viewnya
+jdi di handlenya di view folder event saja dikasih if untuk elemen2 yg tdk bs diakses guest
+
+resources/views
+├── layouts/                     # Template/layout umum
+│   ├── app.blade.php            # Layout utama
+│   ├── guest.blade.php          # Layout untuk guest
+│   ├── customer.blade.php       # Layout untuk customer
+│   ├── organizer.blade.php      # Layout untuk organizer
+│   ├── admin.blade.php          # Layout untuk admin
+│
+├── components/                  # Komponen blade yang reusable
+│   ├── navbar.blade.php         # Navbar umum
+│   ├── event-card.blade.php     # Kartu event reusable
+│   ├── modal.blade.php          # Komponen modal umum
+│
+├── guest/                       # Views untuk Guest
+│   ├── index.blade.php          # Daftar semua event
+│   ├── show.blade.php           # Detail event
+│
+├── customer/                    # Views untuk Customer
+│   ├── index.blade.php          # Daftar event (sama dengan guest/index)
+│   ├── show.blade.php           # Detail event
+│   ├── orders.blade.php         # Daftar pesanan customer
+│   ├── favorites.blade.php      # Event favorit customer
+│
+├── organizer/                   # Views untuk Organizer
+│   ├── index.blade.php          # Daftar event yang diatur oleh organizer
+│   ├── show.blade.php           # Detail event
+│   ├── orders.blade.php         # Daftar pesanan untuk event organizer
+│   ├── create.blade.php         # Form untuk membuat event
+│   ├── edit.blade.php           # Form untuk mengedit event
+│
+├── admin/                       # Views untuk Admin
+│   ├── index.blade.php          # Daftar semua event
+│   ├── show.blade.php           # Detail event
+│   ├── orders.blade.php         # Daftar semua pesanan
+│   ├── users.blade.php          # Daftar semua pengguna
+│   ├── create.blade.php         # Form untuk membuat event
+│   ├── edit.blade.php           # Form untuk mengedit event
