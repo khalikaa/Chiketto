@@ -29,7 +29,13 @@ class HomeController extends Controller
                 // Total ticket terjual: dihitung dari total tiket yang terjual di seluruh event
                 $totalTicketsSold = Ticket::whereHas('bookingDetail')->count();
 
-                return view('admin.dashboard', compact('totalRevenue', 'totalEvents', 'totalTicketsSold'));
+                $totalUsers = User::count();
+
+                $totalCust = User::where('role', 'customer')->count();
+
+                $totalOrg = User::where('role', 'organizer')->count();
+                
+                return view('admin.dashboard', compact('totalRevenue', 'totalEvents', 'totalTicketsSold', 'totalCust', 'totalOrg', 'totalUsers'));
             } 
             // Dashboard untuk Organizer
             else if ($user->role == 'organizer') {

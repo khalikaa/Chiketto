@@ -269,7 +269,7 @@ class BookingController extends Controller
         $booking = Booking::findOrFail($id);
 
         // Ensure the current user is the organizer of the event
-        if (Auth::id() !== $booking->event->user_id && Auth::user()->role !== 'admin') {
+        if (Auth::id() !== $booking->event->user_id && Auth::id() !== $booking->user_id && Auth::user()->role !== 'admin') {
             return redirect()->back()->withErrors(['message' => 'Unauthorized action']);
         }
 

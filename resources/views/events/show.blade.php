@@ -157,7 +157,7 @@
             </a>
         </div>
     </div>
-    {{-- <script src="{{ asset('scripts/favorites.js') }}"></script> --}}
+    <script src="{{ asset('scripts/favorites.js') }}"></script>
     <script src="{{ asset('scripts/book-ticket.js') }}"></script>
     <script src="{{ asset('scripts/flatpickr.js') }}"></script>
     <script>

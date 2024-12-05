@@ -163,20 +163,24 @@
                 <i class="fas fa-arrow-left mr-2"></i> Back
             </a>
             @if ($booking->status === 'pending')
-            <div class="flex gap-x-2">
-                <form action="{{ route('bookings.accept', $booking->id) }}" method="POST">
-                    @csrf
-                    <button type="submit" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-lg shadow-lg hover:opacity-90 transition">
-                        <i class="fas fa-check-circle mr-2"></i> Accept
-                    </button>
-                </form>
-                <form action="{{ route('bookings.cancel', $booking->id) }}" method="POST">
-                    @csrf
-                    <button type="submit" class="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-lg hover:opacity-90 transition">
-                        <i class="fas fa-times-circle mr-[1px]"></i> Cancel
-                    </button>
-                </form>
-            </div>
+                <div class="flex gap-x-2">
+                    @if (auth()->user()->role === 'admin' || auth()->user()->role === 'organizer')
+                        <form action="{{ route('bookings.accept', $booking->id) }}" method="POST">
+                            @csrf
+                            <button type="submit"
+                                class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-lg shadow-lg hover:opacity-90 transition">
+                                <i class="fas fa-check-circle mr-2"></i> Accept
+                            </button>
+                        </form>
+                    @endif
+                    <form action="{{ route('bookings.cancel', $booking->id) }}" method="POST">
+                        @csrf
+                        <button type="submit"
+                            class="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-lg hover:opacity-90 transition">
+                            <i class="fas fa-times-circle mr-[1px]"></i> Cancel
+                        </button>
+                    </form>
+                </div>
 
                 {{-- <a href="{{ route('bookings.index') }}"
                     class="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-lg shadow-lg hover:opacity-90 transition">

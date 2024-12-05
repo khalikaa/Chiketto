@@ -37,6 +37,31 @@
             <hr class="border border-blue-grey my-3">
             <p class="text-2xl font-bold">Rp {{ number_format($totalRevenue, 0, ',', '.') }}</p>
         </div>
+
+        <div class="bg-white shadow-md p-6 rounded-lg">
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl font-semibold text-blue-1">Total Users</h3>
+                <a href="{{ route('users.index') }}" class="text-red-600">Detail</a>
+            </div>
+            <hr class="border border-blue-grey my-3">
+            <p class="text-2xl font-bold">{{ $totalUsers }}</p>
+        </div>
+        
+        <div class="bg-white shadow-md p-6 rounded-lg">
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl font-semibold text-blue-1">Total Customer</h3>
+            </div>
+            <hr class="border border-blue-grey my-3">
+            <p class="text-2xl font-bold">{{ $totalCust }}</p>
+        </div>
+        
+        <div class="bg-white shadow-md p-6 rounded-lg">
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl font-semibold text-blue-1">Total Organizer</h3>
+            </div>
+            <hr class="border border-blue-grey my-3">
+            <p class="text-2xl font-bold">{{ $totalOrg }}</p>
+        </div>
     </div>
 </div>
 @endsection

@@ -60,12 +60,12 @@
                             </div>
                             <hr class="border-blue-1">
                             @if (Route::currentRouteName() === 'manage-events' || Route::currentRouteName() === 'my-events')
-                            <div class="flex justify-between">
-                                <div class="mt-2">
+                            <div class="flex justify-end">
+                                {{-- <div class="mt-2">
                                     <p class="text-lg mt-3 text-blue-1 text-right">Tickets starts at
                                         <strong>Rp{{ number_format($event->cheapest_ticket->price, 0, ',', '.') }}</strong>
                                     </p>
-                                </div>
+                                </div> --}}
                                 <div class="flex justify-end gap-x-2 items-center text-lg text-blue-2 mt-4">
                                     <a href="{{ route('events.show', $event->id) }}"
                                         class="text-blue-500  border-blue-500 border px-3 p-2 rounded-lg hover:bg-blue-500 hover:text-white transition flex items-center">
@@ -88,11 +88,11 @@
                             </div>
                                 
                             @else
-                                <div class="mt-2">
+                                {{-- <div class="mt-2">
                                     <p class="text-lg mt-3 text-blue-1 text-right">Tickets starts at
                                         <strong>Rp{{ number_format($event->cheapest_ticket->price, 0, ',', '.') }}</strong>
                                     </p>
-                                </div>
+                                </div> --}}
                             @endif
                         </div>
                     </div>
