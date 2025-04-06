@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+![Screenshot (1097)](https://github.com/user-attachments/assets/11693f9b-a941-4d2e-901c-0678386d2b5c)<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -7,60 +7,40 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Chiketto
+**Chiketto** is a web-based **e-ticketing system** built using the **Laravel** framework. It is designed to streamline event management and enable seamless interaction between administrators, event organizers, and visitors. Administrators have full access to manage events, users, and view detailed ticket sales reports. Event organizers can create, update, and monitor their own events, as well as view bookings made by visitors. Registered visitors can explore available events, book tickets, view their booking history, and save favorite events for quick access. Chiketto provides an efficient and user-friendly solution for managing and attending events online.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Web Interface
+Here’s a glimpse of Chiketto web interface
+### Home Page
+<img width="810" alt="homepage" src="https://github.com/user-attachments/assets/2ae9d249-8996-43d7-be26-c145b9ad0bc9" />
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Login Page
+![login](https://github.com/user-attachments/assets/17a992e3-cd3d-4a2c-bd34-e9fe42887490)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Register Page
+![register](https://github.com/user-attachments/assets/c8f3033f-395a-4778-8053-29547c2fedc0)
 
-## Learning Laravel
+### Create Event (organizer/admin view)
+<img width="810" alt="create_event" src="https://github.com/user-attachments/assets/0963bff0-1f01-41d0-8a64-99b381c6e742" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Manage Events (organizer/admin view)
+![Screenshot (1097)](https://github.com/user-attachments/assets/9beefe0e-1afb-44ae-af18-1c8d9fef86b3)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Event Detail (guest view)
+<img width="810" alt="event_detail" src="https://github.com/user-attachments/assets/f1c86e28-c63e-4e23-9592-bf8230798705" />
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Event Detail + Book Ticket (customer view)
+<img width="810" alt="booking_ticket" src="https://github.com/user-attachments/assets/8325b083-2ffb-46dd-b93a-60db5a012d4f" />
 
-## Laravel Sponsors
+### Ticket Holder Form for Booking Ticket (customer view)
+![ticket_holder](https://github.com/user-attachments/assets/cd08aa3a-f5a3-4f30-9de8-47b852c99008)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Ticket Booking Management (organizer/admin view)
+![manage_tickets](https://github.com/user-attachments/assets/db5827a3-ce67-4f31-b438-e3418fad289d)
 
-### Premium Partners
+### Booking Detail after Acceptance
+<img width="805" alt="booking_detail" src="https://github.com/user-attachments/assets/52aff887-8520-4bc1-aced-7c6ba8bab03b" />
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Admin Dashboard
+![admin_dashboard](https://github.com/user-attachments/assets/9028008d-2523-49e4-b753-c1ed4c0b4313)
