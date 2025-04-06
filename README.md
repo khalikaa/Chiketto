@@ -1,4 +1,4 @@
-![Screenshot (1097)](https://github.com/user-attachments/assets/11693f9b-a941-4d2e-901c-0678386d2b5c)<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Chiketto
+## About Chiketto チ
 **Chiketto** is a web-based **e-ticketing system** built using the **Laravel** framework. It is designed to streamline event management and enable seamless interaction between administrators, event organizers, and visitors. Administrators have full access to manage events, users, and view detailed ticket sales reports. Event organizers can create, update, and monitor their own events, as well as view bookings made by visitors. Registered visitors can explore available events, book tickets, view their booking history, and save favorite events for quick access. Chiketto provides an efficient and user-friendly solution for managing and attending events online.
 
 ## Web Interface
@@ -37,7 +37,7 @@ Here’s a glimpse of Chiketto web interface
 ![ticket_holder](https://github.com/user-attachments/assets/cd08aa3a-f5a3-4f30-9de8-47b852c99008)
 
 ### Ticket Booking Management (organizer/admin view)
-![manage_tickets](https://github.com/user-attachments/assets/db5827a3-ce67-4f31-b438-e3418fad289d)
+![manage_tickets](https://github.com/user-attachments/assets/78f41238-e306-49e3-b2bd-b98f78ae4d0e)
 
 ### Booking Detail after Acceptance
 <img width="805" alt="booking_detail" src="https://github.com/user-attachments/assets/52aff887-8520-4bc1-aced-7c6ba8bab03b" />
