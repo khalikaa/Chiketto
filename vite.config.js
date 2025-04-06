@@ -7,12 +7,5 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
-    ],
-    server: {
-        host: '0.0.0.0', // Membuka akses untuk jaringan
-        port: 5173,      // Port default Vite
-        hmr: {
-            host: '10.5.70.67', // Ganti dengan alamat IP perangkat Anda
-        },
-    },
+    ]
 });
